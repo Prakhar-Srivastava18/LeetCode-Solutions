@@ -1,0 +1,57 @@
+char* intToRoman(int num) {
+    char* roman=malloc(20*sizeof(char));
+    roman[0] = '\0';
+    while(num>=1000){
+        strcat(roman,"M");
+        num-=1000;
+    }
+    while(num>=900){
+        strcat(roman,"CM");
+        num-=900;
+    }
+    while(num>=500){
+        strcat(roman,"D");
+        num-=500;
+    }
+    while(num>=400){
+        strcat(roman,"CD");
+        num-=400;
+    }
+    while(num>=100){
+        strcat(roman,"C");
+        num-=100;
+    }
+    while(num>=90){
+        strcat(roman,"XC");
+        num-=90;
+    }
+    while(num>=50){
+        strcat(roman,"L");
+        num-=50;
+    }
+    while(num>=40){
+        strcat(roman,"XL");
+        num-=40;
+    }
+    while(num>=10){
+        strcat(roman,"X");
+        num-=10;
+    }
+    while(num>=9){
+        strcat(roman,"IX");
+        num-=9;
+    }
+    while(num>=5){
+        strcat(roman,"V");
+        num-=5;
+    }
+    while(num>=4){
+        strcat(roman,"IV");
+        num-=4;
+    }
+    while(num>=1){
+        strcat(roman,"I");
+        num-=1;
+    }
+    return roman;
+}

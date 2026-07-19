@@ -25,5 +25,9 @@ The solutions are organized into a `my-solutions` folder. Each sub-folder corres
 * Optimize solutions for better time and space complexity.
 * Build a strong foundation for technical interviews and competitive programming.
 
+## 📬 Connect with me
+* **LeetCode:** [View my profile and stats](https://leetcode.com/u/f83xjl5U1E/)
+* **LinkedIn:** [Let's connect](https://www.linkedin.com/in/prakhar-srivastava-113371385)
+
 
 Constantly learning and building. Feel free to explore the code!

@@ -1,15 +1,11 @@
 bool isPalindrome(int x) {
-    if((x/1)<0){
-        return false;
+    if(x<0) return 0;
+    long reverse=0;
+    int temp=x;
+    while(temp>0){
+        int a=temp%10;
+        reverse=reverse*10+a;
+        temp/=10;
     }
-    int n=x;
-    long int reverse=0;
-    while(n>0){
-        reverse += (n%10);
-        reverse*=10;
-        n=n/10;
-    }
-    reverse=reverse/10;
-    if(x==reverse) return true;
-    else return false;
+    return reverse==x;
 }

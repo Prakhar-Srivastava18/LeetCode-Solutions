@@ -1,0 +1,19 @@
+bool sumGame(char* num) {
+    int n=strlen(num);
+    int s1=0, s2=0, q1=0, q2=0;
+    for(int i=0;i<n;i++){
+        if(i<n/2){
+            if(num[i]=='?') q1++;
+            else{
+                s1+=num[i]-'0';
+            }
+        }
+        else{
+            if(num[i]=='?') q2++;
+            else{
+                s2+=num[i]-'0';
+            }
+        }
+    }
+    return (s1-s2 != 4.5*(q2-q1));
+}
